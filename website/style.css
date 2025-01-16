@@ -1,0 +1,148 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background: #fffff8;
+    font-family: 'Oswald', sans-serif;
+    color: #f0d43a;
+}
+
+/* App Container */
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #f23557;
+    padding: 1em;
+    box-sizing: border-box;
+    gap: 1.5em;
+}
+
+/* Headline Section */
+.headline {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #f0d43a;
+    margin-bottom: 1em;
+}
+
+/* Input and Textarea Section */
+.holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    text-align: center;
+}
+
+label {
+    font-size: 24px;
+    margin-bottom: 0.5em;
+}
+
+/* Input Field */
+input {
+    width: 300px;
+    height: 50px;
+    background: #22b2da;
+    color: #f0d43a;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 0.5em;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 300px;
+    height: 150px;
+    background: #22b2da;
+    color: #f0d43a;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 0.5em;
+    box-sizing: border-box;
+}
+
+/* Button Styling */
+button {
+    width: 200px;
+    height: 50px;
+    background: #3b4a6b;
+    color: #f0d43a;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Entry Section */
+.entry {
+    background: rgba(59, 74, 107, 0.4);
+    padding: 1em;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    color: #f0d43a;
+}
+
+#entryHolder {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+#date,
+#temp,
+#content {
+    font-size: 18px;
+    color: #fff;
+}
+
+/* Placeholder Styles */
+::placeholder {
+    color: #f0d43a;
+    opacity: 0.8;
+}
+
+/* Remove Outline for Focused Elements */
+input:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    input,
+    textarea,
+    button {
+        width: 90%;
+    }
+
+    .entry {
+        width: 90%;
+    }
+}
